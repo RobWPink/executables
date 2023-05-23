@@ -9,9 +9,9 @@ echo uploading...
 
 if [ -z "$2" ]
 then
-arduino-cli upload -p /dev/ttyACM0 --fqbn arduino:avr:mega ~/$1
+arduino-cli upload -v -p /dev/ttyACM0 --fqbn arduino:avr:mega ~/$1
 else
-arduino-cli upload -p $2 --fqbn arduino:avr:mega ~/$1
+arduino-cli upload -v -p $2 --fqbn arduino:avr:mega ~/$1
 fi
 
 echo upload successful!
