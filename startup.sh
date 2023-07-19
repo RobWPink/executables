@@ -4,7 +4,7 @@ do
 	SUCCESS=$?
 	if [ $SUCCESS -eq 0 ]
 	then
-		python3 /home/defaultUser/ON.py
+		python3 /home/defaultUser/executables/ON.py
 		sleep 5
 		screen -dmS server python3 /home/defaultUser/raspiThingsboard/raspiThingsboard.py -u reformer1_pad -d
 #		autossh -R 5001:localhost:22 -N 34.236.51.120 -l ubuntu &
