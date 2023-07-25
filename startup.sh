@@ -7,7 +7,7 @@ do
 		python3 ON.py
 		sleep 5
 		screen -dmS server python3 /home/defaultUser/raspiThingsboard/raspiThingsboard.py -u reformer1_pad -d
-		ssh -fN -R 5001:localhost:22 ubuntu@34.236.51.120 -F sshd_config
+		ssh -fN -R 5001:localhost:22 ubuntu@34.236.51.120
 		break
 	fi
 done
